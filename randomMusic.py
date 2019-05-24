@@ -405,6 +405,7 @@ class RandomMusic(object):
 
 \\score {
  <<
+  \\tempo 4 = 120
   \\chords {
 
 """
@@ -415,6 +416,7 @@ class RandomMusic(object):
   \\relative c' {  
    \\numericTimeSignature
    \\time 4/4
+    
 """
 		ret += "\n   ".join([c.lily_notes() for c in self.chords])
 		ret += """
